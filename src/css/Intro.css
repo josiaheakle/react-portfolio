@@ -1,0 +1,22 @@
+
+
+.josiah-eakle-header {
+    margin-block-start: 0;
+}
+
+.Intro {
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    padding-top: 3rem;
+    padding-bottom: 3rem;  
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border: 1rem solid var(--white);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow: 2px 2px 5px black;
+
+}
+
