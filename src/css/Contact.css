@@ -12,7 +12,7 @@
     box-shadow: 2px 2px 5px black;
 }
 
-.copy-button {
+.copy-to-clipboard-button {
     margin-top: 1em;
     width: 8rem;
     min-width: min-content;
@@ -24,11 +24,15 @@
     color: var(--white);
     background-color: var(--dark-grey);
     /* filter: blur(1px); */
-    transition: transform .5s ease-out;
+    transition: transform .5s ease-out, background-color .5s;
     cursor: pointer;
 }
 
-.copy-button:hover {
+.copy-to-clipboard-button:hover {
     transform: translateY(-5px);
     box-shadow: 2px 2px 5px black;
+}
+
+.copy-to-clipboard-button:active {
+    background-color: var(--orange);
 }
