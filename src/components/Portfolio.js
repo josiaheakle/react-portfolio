@@ -8,10 +8,10 @@ import Project from "./Project.js"
 
 const Portfoio = (props) => {
 
-    const tttDescr = 'Simple Tic Tac Toe application, which uses no frameworks. This was made early within my education, and is thusly quite dull.'
-    const myClimateDescr = 'Using the OpenWeatherMap weather Api for the weather data, this project uses React and is styled from scratch.'
-    const todoDescr = 'My simple checklist app, which using no Front-End Framwork. This application does, however, use Materialize for a css framework.'
-    const shoppingListDescr = 'Another React application, this is a simple store-front mockup. This application was styled from scratch.'
+    const tttDescr = 'This simple Tic Tac Toe application uses no frameworks and was made early within my education.'
+    const myClimateDescr = 'Using the OpenWeatherMap weather Api for the weather data, this project uses React and is styled using no Css Frameworks.'
+    const todoDescr = 'My simple checklist app, which uses no Front-End Framework. This application does, however, use Materialize for a Css Framework.'
+    const shoppingListDescr = 'Another React application, this is a simple store-front mockup. This application was styled using no Css Frameworks.'
 
 
     return(
