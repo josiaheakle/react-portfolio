@@ -4,10 +4,6 @@ import {motion} from "framer-motion"
 import "../css/Portfolio.css"
 
 import Project from "./Project.js"
-import ticTacToeImg from "../media/ticTacToe.png"
-import todoImg from "../media/todo.png"
-import shoppingCartImg from "../media/shoppingCart.png"
-import weatherImg from "../media/weatherApp.png"
 
 
 const Portfoio = (props) => {
@@ -22,10 +18,10 @@ const Portfoio = (props) => {
         <motion.div exit={ {opacity: 0} } initial={ {opacity: 0} } animate={ {opacity:1} } className='Portfolio main-container'>
             <h2> My Projects </h2>
             <div className='project-grid-container'>
-                <Project title='My Climate' descr={myClimateDescr} previewImg={weatherImg} ghLink='https://github.com/josiaheakle/weather-app/' appLink="https://josiaheakle.github.io/weather-app/" />
-                <Project title='Todo' descr={todoDescr} previewImg={todoImg} ghLink='https://github.com/josiaheakle/todo-list/' appLink="https://josiaheakle.github.io/todo-list/" />
-                <Project title='Woodland Cabins' descr={shoppingListDescr} previewImg={shoppingCartImg} ghLink='https://github.com/josiaheakle/shopping-cart/' appLink="https://josiaheakle.github.io/shopping-cart/" />
-                <Project title='Tic Tac Toe' descr={tttDescr} previewImg={ticTacToeImg} ghLink='https://github.com/josiaheakle/tic-tac-toe/' appLink="https://josiaheakle.github.io/tic-tac-toe/" />
+                <Project title='My Climate' descr={myClimateDescr} ghLink='https://github.com/josiaheakle/weather-app/' appLink="https://josiaheakle.github.io/weather-app/" />
+                <Project title='Todo' descr={todoDescr} ghLink='https://github.com/josiaheakle/todo-list/' appLink="https://josiaheakle.github.io/todo-list/" />
+                <Project title='Woodland Cabins' descr={shoppingListDescr} ghLink='https://github.com/josiaheakle/shopping-cart/' appLink="https://josiaheakle.github.io/shopping-cart/" />
+                <Project title='Tic Tac Toe' descr={tttDescr} ghLink='https://github.com/josiaheakle/tic-tac-toe/' appLink="https://josiaheakle.github.io/tic-tac-toe/" />
             
             </div>
             

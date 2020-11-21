@@ -7,27 +7,10 @@ const Project = ( props ) => {
     // props :
     //      title
     //      descr
-    //      previewImg
     //      ghLink
     //      appLink
 
-    // const handleIconAnim = () => {
-    //     const ghIcon = document.getElementById(`project-${props.title}`).querySelector('.github-icon')
-    //     console.log(ghIcon)
-    //     ghIcon.addEventListener('mouseover', () => {
-    //         ghIcon.style.animationName = 'github-icon-hover'
-    //         ghIcon.style.animationnDuration = '200ms'
 
-    //     })
-    //     ghIcon.addEventListener('mouseout', () => {
-    //         ghIcon.style.animationName = 'github-icon-hover-out'
-    //         ghIcon.style.animationnDuration = '200ms'
-    //     })
-    // }
-
-    // useEffect(() => {
-    //     handleIconAnim()
-    // }, [])
 
     return (
         <div className='Project' id={`project-${props.title}`}>

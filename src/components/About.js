@@ -3,17 +3,23 @@ import {motion} from "framer-motion"
 
 import "../css/About.css"
 
-import faceImg from "../media/face-img.jpg"
+import faceImg from "../media/me_n_son.jpg"
 
 const About = (props) => {
 
     return(
         <motion.div exit={ {opacity: 0} } initial={ {opacity: 0} } animate={ {opacity:1} } className='About main-container'>
+
+
+
+
             <div className='about-info-container'>
+
                 <div className='about-img-container'>
                     <img src={faceImg} className='about-img'></img>
                 </div>
                 <h2 className='about-header'> Hello, I'm <span className='to-color'>Josiah Eakle</span></h2>
+
                 <p className='about-para'>     
                     Located in Oak Ridge TN, I have been passionately learning web development following 
                     <a href="https://www.theodinproject.com/" className='odin-link'>The Odin Project</a>
@@ -24,6 +30,9 @@ const About = (props) => {
                     , the 
                     front-end framework.
                 </p>
+
+
+
             </div>
             <div className='grid-about-info'>
                 <div className='grid-info'>
@@ -38,7 +47,7 @@ const About = (props) => {
                                 All legitimate websites should be functional and clean on all devices.
                             </p>
                 </div>
-                <div className='grid-info'>
+                <div className='grid-info last'>
                     <h3> Frameworks </h3>
                     <p>While most projects don't necessarily need a Front-End framework, the ability to implement one can drasitcally improve your workflow. 
                         As of yet, I have utilized  <a href="https://reactjs.org/" className='odin-link'>React</a>. While I have yet to use any other Front-End

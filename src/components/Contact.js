@@ -4,6 +4,7 @@ import "../css/Contact.css"
 import {motion} from "framer-motion"
 import Clipboard from "clipboard"
 import { useEffect } from "react"
+import { toast } from 'react-toastify';
 
 const Contact = ( props ) => {
 
@@ -11,11 +12,27 @@ const Contact = ( props ) => {
         const clipboard = new Clipboard('.copy-to-clipboard-button');
 
         clipboard.on('success', function() {
-            console.log(`copied`)
+            toast.dark('Email copied to clipboard!', {
+                position: "bottom-left",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
 
         });
         clipboard.on('error', function() {
-            console.log(`not copied`)
+            toast.dark('Error copying to clipboard!', {
+                position: "bottom-left",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
         });
     }
 

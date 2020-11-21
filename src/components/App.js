@@ -3,6 +3,9 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
 import { useEffect, useState } from "react"
 
 import { AnimatePresence, motion } from "framer-motion"
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+
 
 // my components
 import Intro from "./Intro.js"
@@ -75,6 +78,12 @@ function App() {
 
   return (
     <div className="App" style={{backgroundImage:`url(${bgImg})`}}>
+      <ToastContainer
+      position="top-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick/>
       <div className='nav-button-container'>
         <button onClick={updatePageFromNav} id='home-nav-button' className='nav-button' > Home </button>
         <button onClick={updatePageFromNav} id='about-nav-button' className='nav-button' > About </button>
