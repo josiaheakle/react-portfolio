@@ -39,7 +39,7 @@ const Project = ( props ) => {
                         <img className='github-icon' src={gitHubIcon} alt='Source Code' />
                     </a>
                     <a className='app-link project-link' href={props.appLink} title='Live Project Preview' >
-                        <button className='project-link-button'> View Project </button>
+                        <button className='project-link-button'> View </button>
                     </a>
                 </div>
             </div>

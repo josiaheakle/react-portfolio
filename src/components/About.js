@@ -1,4 +1,6 @@
 
+import {motion} from "framer-motion"
+
 import "../css/About.css"
 
 import faceImg from "../media/face-img.jpg"
@@ -6,7 +8,7 @@ import faceImg from "../media/face-img.jpg"
 const About = (props) => {
 
     return(
-        <div className='About main-container'>
+        <motion.div exit={ {opacity: 0} } initial={ {opacity: 0} } animate={ {opacity:1} } className='About main-container'>
             <div className='about-info-container'>
                 <div className='about-img-container'>
                     <img src={faceImg} className='about-img'></img>
@@ -46,7 +48,7 @@ const About = (props) => {
                 </div>
             </div>
 
-        </div> 
+        </motion.div> 
     );
 }
 

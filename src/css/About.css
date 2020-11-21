@@ -1,9 +1,9 @@
 .About {
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    /* background-color: black; */
+    margin-top: 4rem;
     padding: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     padding-top: 1rem;
     border: 1rem solid var(--white);
     display: flex;

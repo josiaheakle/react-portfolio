@@ -1,0 +1,34 @@
+.Contact {
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    /* background-color: black; */
+    padding: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border: 1rem solid var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+.copy-button {
+    margin-top: 1em;
+    width: 8rem;
+    min-width: min-content;
+    padding: .25rem;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid var(--white);
+  
+    color: var(--white);
+    background-color: var(--dark-grey);
+    /* filter: blur(1px); */
+    transition: transform .5s ease-out;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 5px black;
+}

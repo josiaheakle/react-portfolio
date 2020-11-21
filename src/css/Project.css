@@ -50,12 +50,17 @@
 
 .project-link-button {
     transition: transform .5s ease-out;
-
+    outline: none;
+    border: none;
+    font-size: .9em;
+    height: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .project-link-button:hover {
     transform: translateY(-5px);
-
+    box-shadow: 2px 2px 4px black;
 }
 
 .project-button-container {

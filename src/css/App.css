@@ -20,6 +20,8 @@
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
+  position: absolute;
+  top: 0px;
 }
 
 
@@ -36,13 +38,14 @@
   background-color: var(--dark-grey);
   /* filter: blur(1px); */
   transition: transform .5s ease-out;
-
+  cursor: pointer;
 }
 
 .nav-button.selected {
   border: 1px solid var(--white);
   color: var(--white);
   background-color: var(--orange);
+  cursor: auto;
   
 }
 

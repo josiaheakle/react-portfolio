@@ -2,19 +2,19 @@
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
 import { useEffect, useState } from "react"
 
-import {} from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 
 // my components
 import Intro from "./Intro.js"
 import About from "./About.js"
 import Portfolio from "./Portfolio.js"
+import Contact from "./Contact.js"
 
 // css for this component
 import '../css/App.css';
 
 // media for this component
 import bgImg from '../media/background-image3.jpg'
-import Portfoio from "./Portfolio.js"
 
 function App() {
 
@@ -82,23 +82,25 @@ function App() {
         <button onClick={updatePageFromNav} id='contact-nav-button' className='nav-button' > Contact </button>
       </div>
         <BrowserRouter>
-         <Switch> 
-           <Route path="/">
-             {(currentPage!=='')?<Redirect to={currentPage} />:null}
-              <Route path='/home' >
-                <Intro/>
+          <AnimatePresence>
+            <Switch> 
+              <Route path="/">
+                {(currentPage!=='')?<Redirect to={currentPage} />:null}
+                  <Route path='/home' >
+                    <Intro/>
+                  </Route>
+                  <Route path='/about'>
+                    <About />
+                  </Route>
+                  <Route path='/portfolio'>
+                    <Portfolio />
+                  </Route>
+                  <Route path='/contact'>
+                    <Contact />
+                  </Route>
               </Route>
-              <Route path='/about'>
-                <About />
-              </Route>
-              <Route path='/portfolio'>
-                <Portfoio />
-              </Route>
-              <Route path='/contact'>
-
-              </Route>
-           </Route>
-         </Switch>
+            </Switch>
+          </AnimatePresence>
         </BrowserRouter>
     </div>
   );
