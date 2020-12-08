@@ -140,3 +140,7 @@
     box-shadow: 2px 2px 5px black;
 
 }
+
+.grid-info h3 {
+    color: var(--orange);
+}
