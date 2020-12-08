@@ -22,13 +22,12 @@ const About = (props) => {
 
                 <p className='about-para'>     
                     Located in Oak Ridge TN, I have been passionately learning web development following 
-                    <a href="https://www.theodinproject.com/" className='odin-link'>The Odin Project</a>
-                    . I have completed the Front-End course and 
-                    am continuing to learn to become a Full-Stack developer. Through this course, I have learned
-                    plain HTML, CSS, JavaScript and have spent quality time practicing with 
+                    <a href="https://www.theodinproject.com/" className='odin-link'>The Odin Project</a>, a full-stack curriculum teaching HTML, CSS, JavaScript, React, and Node.js 
+                    . I have completed the course and am a capable Full-Stack developer. Through this course, I have learned
+                    plain HTML, CSS, JavaScript, have spent quality time practicing with 
                     <a href="https://reactjs.org/" className='odin-link'>React</a>
                     , the 
-                    front-end framework.
+                    front-end framework. Additionally, I have worked with Node.js and Express, the backend technologies.
                 </p>
 
 
@@ -36,22 +35,22 @@ const About = (props) => {
             </div>
             <div className='grid-about-info'>
                 <div className='grid-info'>
-                    <h3> Responsive </h3>
-                    <p>A desire to develop a consistent clean product pushes responsive design. With an understanding of css, I am driven to 
-                            create beautiful and functional websites, designed to look clean for all users.</p>
+                    <h3> Front-End </h3>
+                    <p>A desire to develop a consistent clean product pushes responsive design. With an understanding of HTML, CSS, JavaScript, and <a href="https://reactjs.org/" className='odin-link'>React</a>., I am driven to 
+                            create beautiful and functional websites, designed for a clean and streamlined experience for all users.</p>
                 </div>
                 <div className='grid-info'>
-                    <h3> Mobile Friendly </h3>
-                    <p>We live in a day and age where everyone owns a smartphone, our websites should cater to the mobile audience.
-                                With this in mind, I am adamant about creating a streamlined and attractive experience for the mobile user.
-                                All legitimate websites should be functional and clean on all devices.
+                    <h3> Back-End </h3>
+                    <p>The Front-End of your application is only half the battle. If any authentication or data is needed, you will need a back-end. With a familiarity of 
+                        <a href="https://nodejs.org/en/" className='odin-link'>Node.js</a> and <a href="https://expressjs.com/" className='odin-link'>Express</a>, 
+                        I am capable of creating any full-stack application to fit your needs.
                             </p>
                 </div>
                 <div className='grid-info last'>
                     <h3> Frameworks </h3>
                     <p>While most projects don't necessarily need a Front-End framework, the ability to implement one can drasitcally improve your workflow. 
-                        As of yet, I have utilized  <a href="https://reactjs.org/" className='odin-link'>React</a>. While I have yet to use any other Front-End
-                        Framework, I am looking forward to trying Angluar, Vue, and Svelte.
+                        I have utilized  <a href="https://reactjs.org/" className='odin-link'>React</a>. In addition, I have worked with <a href="https://expressjs.com/" className='odin-link'>Express</a> in order
+                        to create efficient back-ends and REST APIs.
 
                         </p>
                 </div>
