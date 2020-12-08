@@ -36,12 +36,12 @@ const About = (props) => {
             <div className='grid-about-info'>
                 <div className='grid-info'>
                     <h3> Front-End </h3>
-                    <p>A desire to develop a consistent clean product pushes responsive design. With an understanding of HTML, CSS, JavaScript, and <a href="https://reactjs.org/" className='odin-link'>React</a>., I am driven to 
+                    <p>A desire to develop a consistent clean product pushes responsive design. With an understanding of HTML, CSS, JavaScript, and <a href="https://reactjs.org/" className='odin-link'>React</a>, I am driven to 
                             create beautiful and functional websites, designed for a clean and streamlined experience for all users.</p>
                 </div>
                 <div className='grid-info'>
                     <h3> Back-End </h3>
-                    <p>The Front-End of your application is only half the battle. If any authentication or data is needed, you will need a back-end. With a familiarity of 
+                    <p>The Front-End of your application is only half the battle. If any authentication or data is needed, you will need a back-end. With a familiarity with 
                         <a href="https://nodejs.org/en/" className='odin-link'>Node.js</a> and <a href="https://expressjs.com/" className='odin-link'>Express</a>, 
                         I am capable of creating any full-stack application to fit your needs.
                             </p>
@@ -49,9 +49,8 @@ const About = (props) => {
                 <div className='grid-info last'>
                     <h3> Frameworks </h3>
                     <p>While most projects don't necessarily need a Front-End framework, the ability to implement one can drasitcally improve your workflow. 
-                        I have utilized  <a href="https://reactjs.org/" className='odin-link'>React</a>. In addition, I have worked with <a href="https://expressjs.com/" className='odin-link'>Express</a> in order
+                        I have utilized  <a href="https://reactjs.org/" className='odin-link'>React</a> to streamline my front-end development. Additionally, I have worked with <a href="https://expressjs.com/" className='odin-link'>Express</a> in order
                         to create efficient back-ends and REST APIs.
-
                         </p>
                 </div>
             </div>
