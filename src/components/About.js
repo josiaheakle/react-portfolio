@@ -16,7 +16,7 @@ const About = (props) => {
             <div className='about-info-container'>
 
                 <div className='about-img-container'>
-                    <img src={faceImg} className='about-img'></img>
+                    <img src={faceImg} className='about-img' alt='Josiah Eakle and son'></img>
                 </div>
                 <h2 className='about-header'> Hello, I'm <span className='to-color'>Josiah Eakle</span></h2>
 
