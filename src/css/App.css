@@ -7,9 +7,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-shadow: 1px 1px black;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  text-shadow: 1px 1px black;
   background-color: var(--dark-grey);
 }
 
