@@ -5,9 +5,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 5;
+    transition: backdrop-filter .5s, border-width .5s;
+
 }
 
-
+.About.done {
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 2px 2px 5px black;
+    border: 1rem solid var(--white);
+}
 
 
 @media only screen and (min-width: 700px) {
@@ -143,4 +151,14 @@
 
 .grid-info h3 {
     color: var(--orange);
+}
+
+.list-link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.list-link:hover {
+    color: var(--orange);
+    text-decoration: underline;
 }

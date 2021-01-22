@@ -9,6 +9,7 @@ const Project = ( props ) => {
     //      descr
     //      ghLink
     //      appLink
+    //      bullets
 
 
 
@@ -17,6 +18,17 @@ const Project = ( props ) => {
             <div className='project-info'>
                 <h3 className='project-title'>{props.title}</h3>
                 <p className='project-descr'>{props.descr}</p>
+                {(props.bullets) ? 
+                    <ul className='project-bullets'>
+                        {props.bullets.map((b, i) => {
+                            return (
+                            <li className='project-bullet'>
+                                <p key={i} className='project-bullet-text' >{b}</p>
+                             </li> 
+                            );  
+                        })}
+                    </ul>
+                :null}
                 <div className='project-button-container'>
                     <a className='github-link project-link' href={props.ghLink} title='Source Code Link' >
                         <img className='github-icon' src={gitHubIcon} alt='Source Code' />

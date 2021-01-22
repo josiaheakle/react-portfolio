@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 // my components
 import Intro from "./Intro.js"
 import About from "./About.js"
+import Navbar from "./Navbar.js";
 import Portfolio from "./Portfolio.js"
 import Contact from "./Contact.js"
 
@@ -17,86 +18,47 @@ import Contact from "./Contact.js"
 import '../css/App.css';
 
 // media for this component
-import bgImg from '../media/background-image3.jpg'
+import bgVid from '../media/back-video.mp4'
 
 function App() {
 
-  const [ currentPage, setCurrentPage ] = useState('')
+  const [ currentPage, setCurrentPage ] = useState('');
+  const [ introFirstMount, setIntroFirstMount ] = useState(true); // set false after first mount
 
-  const pages = [
-    '/home',
-    '/about',
-    '/contact',
-    '/portfolio'
-  ]
-
-  const updatePageFromNav = (event) => {
-    setCurrentPage(`/${event.target.innerText.toLowerCase()}`)
+  const setIntroAnimDone = () => {
+    setIntroFirstMount(false);
   }
 
-  const checkUrl = () => {
-    
-    let i=0;
-    let found = false;
-    let pathname = window.location.pathname;
-    while(i<pages.length && found === false) {
-      if(pathname == pages[i++]) {
-        found = true;
-      }
-    }
-
-    if(found === false) {
-      setCurrentPage('/home')
-    } else {
-      setCurrentPage(pathname.toLowerCase())
-    }
-
-  }
-
-  const updateNavButtons = () => {
-    const navBtns = document.querySelectorAll('.nav-button')
-    const pathname = currentPage.slice(1)
-
-    navBtns.forEach(btn => {
-      if(btn.id === `${pathname}-nav-button`) {
-        btn.classList.add('selected')
-        btn.classList.remove('unselected')
-      } else {
-        btn.classList.remove('selected')
-        btn.classList.add('unselected')
-      }
-    })
+  const updateCurrentPage = (page) => {
+    setCurrentPage(page);
   }
 
   useEffect(() => {
-    updateNavButtons();
-  }, [currentPage])
-
-  useEffect(() => {
-    checkUrl()
+    setTimeout(() => {
+      setIntroAnimDone();
+    }, 5000)
   }, [])
 
   return (
-    <div className="App" style={{backgroundImage:`url(${bgImg})`}}>
+    // style={{backgroundImage:`url(${bgImg})`}}
+    <div className="App" >
+      <video autoPlay muted loop id="background-video">
+        <source src={bgVid} type="video/mp4"/>
+      </video>
       <ToastContainer
       position="top-right"
       autoClose={5000}
       hideProgressBar={false}
       newestOnTop={false}
       closeOnClick/>
-      <div className='nav-button-container'>
-        <button onClick={updatePageFromNav} id='home-nav-button' className='nav-button' > Home </button>
-        <button onClick={updatePageFromNav} id='about-nav-button' className='nav-button' > About </button>
-        <button onClick={updatePageFromNav} id='portfolio-nav-button' className='nav-button' > Portfolio </button>
-        <button onClick={updatePageFromNav} id='contact-nav-button' className='nav-button' > Contact </button>
-      </div>
+      <Navbar updateCurrentPage={updateCurrentPage} />
         <BrowserRouter>
           <AnimatePresence>
             <Switch> 
               <Route path="/">
                 {(currentPage!=='')?<Redirect to={currentPage} />:null}
                   <Route path='/home' >
-                    <Intro/>
+                    <Intro setAfterFirstMount={setIntroAnimDone} isFirstMount={introFirstMount} />
                   </Route>
                   <Route path='/about'>
                     <About />
@@ -116,3 +78,6 @@ function App() {
 }
 
 export default App;
+
+
+// Video by GamOl from Pexels

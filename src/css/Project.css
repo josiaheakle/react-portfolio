@@ -44,9 +44,14 @@
     transform: translateY(-5px);
 
 }
+
+.github-link {
+    height: 24px;
+}
   
 .project-link {
     /* text-decoration: none; */
+    /* height: 24px; */
     color: var(--orange);
 }
 
@@ -69,5 +74,25 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+    margin-bottom: 1em;
+}
+
+.project-bullet-text {
+    text-align: left;
+}
+
+.project-bullets {
+    margin-top: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: left;
+}
+
+li { 
+    text-align: left;
 }
